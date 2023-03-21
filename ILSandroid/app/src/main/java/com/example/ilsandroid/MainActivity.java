@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        boolean result = super.onCreateOptionsMenu(menu);
+        boolean results = super.onCreateOptionsMenu(menu);
         // Using findViewById because NavigationView exists in different layout files
         // between w600dp and w1240dp
         NavigationView navView = findViewById(R.id.nav_view);
@@ -69,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
             // We only inflate the overflow menu if the navigation drawer isn't visible
             getMenuInflater().inflate(R.menu.overflow, menu);
         }
-        return result;
+        return results;
     }
-
+/* Hi Po */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.nav_settings) {
